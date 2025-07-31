@@ -1,81 +1,89 @@
 /* Custom Font Family Declarations */
-body {
-  font-family: "Lato", sans-serif;
-  background-color: #1a1a1a; /* Dark background */
-  color: #e0e0e0; /* Light gray text */
-}
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Poppins", sans-serif;
-}
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #1a1a1a; /* Dark background */
+            color: #e0e0e0; /* Light gray text */
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+        }
 
-/* Custom scrollbar for a polished look */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #2c2c2c; /* Dark track */
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: #555; /* Gray thumb */
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #888; /* Lighter gray on hover */
-}
+        /* Custom scrollbar for a polished look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2c2c2c; /* Dark track */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #555; /* Gray thumb */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #888; /* Lighter gray on hover */
+        }
 
-/* Hero Video Styles */
-.hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translateX(-50%) translateY(-50%);
-  /* Ensure the video is always centered and fills the screen */
-}
-/* Custom class for a text outline effect */
-.text-outline-gray {
-  text-shadow: -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555,
-    1px 1px 0 #555;
-}
-/* Styles for the custom message box */
-.message-box-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-.message-box-content {
-  background-color: #2a2a2a;
-  color: #e0e0e0;
-  padding: 2rem;
-  border-radius: 0.75rem;
-  max-width: 90%;
-  width: 400px;
-  text-align: center;
-  position: relative;
-}
-.message-box-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #e0e0e0;
-  transition: color 0.3s;
-}
-.message-box-close:hover {
-  color: #00c6a7;
-}
+        /* Hero Video Styles */
+        .hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translateX(-50%) translateY(-50%);
+            /* Ensure the video is always centered and fills the screen */
+        }
+        /* Custom class for a text outline effect */
+        .text-outline-gray {
+            text-shadow: -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555, 1px 1px 0 #555;
+        }
+        /* Styles for the custom message box */
+        .message-box-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.75);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .message-box-content {
+            background-color: #2a2a2a;
+            color: #e0e0e0;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            max-width: 90%;
+            width: 400px;
+            text-align: center;
+            position: relative;
+        }
+        .message-box-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #e0e0e0;
+            transition: color 0.3s;
+        }
+        .message-box-close:hover {
+            color: #00c6a7;
+        }
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 4px solid #00c6a7;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
