@@ -46,14 +46,14 @@
       </video>
 
       <div class="container mx-auto px-6 relative z-20">
-        <h1 class="text-6xl md:text-8xl font-extrabold mb-4 leading-tight text-white text-outline-gray">
-          Skyler Lamb
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight text-white text-outline-gray">
+          Crafting Digital Experiences
         </h1>
-        <p class="text-xl md:text-3xl font-light text-gray-200 text-outline-gray">
-          Professional Web Designer & Developer
+        <p class="text-lg md:text-2xl font-light text-gray-200 text-outline-gray">
+          I design and build beautiful, functional websites that tell your unique story.
         </p>
         <a href="#portfolio" class="mt-12 inline-block bg-[#00c6a7] text-white hover:bg-[#00a891] transition-colors duration-300 font-bold py-4 px-12 rounded-full shadow-lg text-lg uppercase tracking-wider">
-          View My Work
+          Explore My Portfolio
         </a>
       </div>
     </section>
@@ -136,8 +136,8 @@
         <p class="text-center text-lg md:text-xl mb-12 text-gray-400">
           Ready to build something amazing together? Reach out to me, and let's discuss your project.
         </p>
-        <!-- Formspree Integration -->
-        <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6">
+        <!-- Placeholder Form -->
+        <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6">
           <div>
             <label for="name" class="block text-lg font-semibold mb-2">Name</label>
             <input type="text" id="name" name="name" class="w-full p-4 rounded-lg bg-[#1a1a1a] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#00c6a7]" placeholder="Your Name" required>
@@ -153,10 +153,22 @@
           <button type="submit" class="w-full bg-[#00c6a7] text-white font-bold py-4 rounded-lg shadow-lg hover:bg-[#00a891] transition-colors duration-300 text-lg uppercase tracking-wider">
             Send Message
           </button>
+          <p class="text-center text-sm text-gray-400 mt-4 italic">
+            *This form is currently in demo mode while I build out my full portfolio. For now, feel free to contact me through social media or email.*
+          </p>
         </form>
       </div>
     </section>
   </main>
+
+  <!-- Custom Message Box -->
+  <div id="messageBox" class="message-box-overlay hidden">
+    <div class="message-box-content">
+      <span class="message-box-close" onclick="closeMessageBox()">&times;</span>
+      <h3 class="text-2xl font-bold mb-4">Message Sent!</h3>
+      <p>Thanks for reaching out! This form is just a placeholder for now. Please contact me via email or socials.</p>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-[#1a1a1a] text-gray-500 py-8 text-center">
@@ -168,6 +180,24 @@
   <script>
     // JavaScript to dynamically set the current year in the footer
     document.getElementById('currentYear').textContent = new Date().getFullYear();
+    // JavaScript to handle the custom message box
+    const contactForm = document.getElementById('contactForm');
+    const messageBox = document.getElementById('messageBox');
+    // Function to show the message box
+    const showMessageBox = () => {
+      messageBox.classList.remove('hidden');
+    };
+    // Function to hide the message box
+    const closeMessageBox = () => {
+      messageBox.classList.add('hidden');
+    };
+    // Add event listener to the form to show the message box on submit
+    contactForm.addEventListener('submit', (e) => {
+      // Prevent the default form submission
+      e.preventDefault();
+      // Show the custom message box
+      showMessageBox();
+    });
   </script>
 </body>
 
