@@ -2,375 +2,244 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skyler Lamb - Professional Web Designer</title>
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Skyler Lamb is a professional web designer specializing in clean, modern, and effective websites for businesses.">
-    <meta name="keywords" content="Skyler Lamb, web design, web developer, portfolio, professional website, front-end developer">
-    <meta name="author" content="Skyler Lamb">
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts for a modern, professional look -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyler Lamb - Professional Web Designer</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Skyler Lamb is a professional web designer specializing in clean, modern, and effective websites for businesses.">
+  <meta name="keywords" content="Skyler Lamb, web design, web developer, portfolio, professional website, front-end developer">
+  <meta name="author" content="Skyler Lamb">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts for a modern, professional look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="min-h-screen">
 
-    <!-- Header & Navigation -->
-    <header class="bg-[#1a1a1a] sticky top-0 z-50 shadow-lg">
-        <div class="container mx-auto px-6 py-4 flex flex-col md:flex-row md:justify-between items-center md:items-center gap-4">
-            <!-- Profile picture, Name, and Status Badge -->
-            <div class="flex items-center">
-                <img src="https://scontent.fslc3-1.fna.fbcdn.net/v/t39.30808-6/502559830_24114264594838309_8926670469152375718_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=CIf4_PmDfSAQ7kNvwH2H3Ns&_nc_oc=AdnZ62QLMG9TCLkB_J7H6K0Ak_tdonbQuVEuKFXpcMLGme7EYU2eePT309zIEfzBYEA&_nc_zt=23&_nc_ht=scontent.fslc3-1.fna&_nc_gid=ZUpRrk6YyhW7Bvo1Lp3GYA&oh=00_AfQ1kS8FjC3zXQ1wSkmt2Y9xIo4Tsr2YkBmly3BfK3nRKA&oe=6891789B" alt="Skyler Lamb Profile Picture" class="w-10 h-10 rounded-full mr-3">
-                <a href="#hero" class="text-3xl font-bold text-white hover:text-[#00c6a7] transition-colors duration-300">Skyler Lamb</a>
-                <!-- "Available for Hire" Badge -->
-                <span class="ml-4 bg-[#00c6a7] text-[#1a1a1a] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider hidden md:block">
-                    Available for Hire
-                </span>
-            </div>
-            <nav class="space-x-4 md:space-x-8">
-                <a href="#about" class="text-gray-300 hover:text-[#00c6a7] font-semibold text-lg transition-colors duration-300">About</a>
-                <a href="#portfolio" class="text-gray-300 hover:text-[#00c6a7] font-semibold text-lg transition-colors duration-300">Portfolio</a>
-                <a href="#ai-assistant" class="text-gray-300 hover:text-[#00c6a7] font-semibold text-lg transition-colors duration-300">AI Assistant</a>
-                <a href="#contact" class="text-gray-300 hover:text-[#00c6a7] font-semibold text-lg transition-colors duration-300">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="relative overflow-hidden h-screen flex items-center justify-center text-center">
-            <!-- This is the semi-transparent gray overlay to make the text pop -->
-            <div class="absolute inset-0 bg-gray-900 opacity-80"></div>
-            <!-- Video Background - Updated with the user-provided video element -->
-            <video id="b1b0a533-a70b-9909-ff0d-20fa8edb14e2-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/661bf41500fccc993d0782ce%2F667e2ba804f36535701377f4_Brady%20Donovan%20Design%20hero%20video-poster-00001.jpg&quot;); position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; width: auto; height: auto;" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-                <source src="https://cdn.prod.website-files.com/661bf41500fccc993d0782ce%2F667e2ba804f36535701377f4_Brady%20Donovan%20Design%20hero%20video-transcode.mp4" data-wf-ignore="true">
-                <source src="https://cdn.prod.website-files.com/661bf41500fccc993d0782ce%2F667e2ba804f36535701377f4_Brady%20Donovan%20Design%20hero%20video-transcode.webm" data-wf-ignore="true">
-            </video>
-
-            <div class="container mx-auto px-6 relative z-20">
-                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight text-white text-outline-gray">
-                    Crafting Digital Experiences
-                </h1>
-                <p class="text-lg md:text-2xl font-light text-gray-200 text-outline-gray">
-                    I design and build beautiful, functional websites that tell your unique story.
-                </p>
-                <a href="#portfolio" class="mt-12 inline-block bg-[#00c6a7] text-white hover:bg-[#00a891] transition-colors duration-300 font-bold py-4 px-12 rounded-full shadow-lg text-lg uppercase tracking-wider">
-                    Explore My Portfolio
-                </a>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-20 md:py-32 bg-[#2a2a2a]">
-            <div class="container mx-auto px-6 text-center max-w-4xl">
-                <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">
-                    About Me
-                </h2>
-                <p class="text-lg md:text-xl text-gray-400 leading-relaxed mb-6">
-                    I am a passionate and dedicated web designer with a focus on creating beautiful, functional, and user-friendly websites. I specialize in crafting digital experiences that not only look great but also drive results for small businesses. My work is built on a foundation of clean code, responsive design, and a commitment to client satisfaction.
-                </p>
-                <p class="text-lg md:text-xl text-gray-400 leading-relaxed">
-                    I believe that every business deserves a strong online presence, and I am here to help you build one that truly represents your brand. Let's create something remarkable together.
-                </p>
-            </div>
-        </section>
-
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="py-20 md:py-32 bg-[#1a1a1a]">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-16">
-                    My Recent Projects
-                </h2>
-                <!-- Project Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-
-                    <!-- Project Card 1: The Galleries -->
-                    <div class="bg-[#2a2a2a] rounded-xl shadow-xl hover:shadow-[0_10px_20px_rgba(0,198,167,0.3)] transition-shadow duration-300 overflow-hidden group">
-                        <img src="https://scontent.fslc3-1.fna.fbcdn.net/v/t39.30808-6/358728862_752616846868615_5538948483867149466_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=a1RHovXvrNoQ7kNvwHxefOy&_nc_oc=AdkU8JpfXsJHG_Zi13aTj-lorrW1Vb9xdeG-Dr4LTdTiUCStg5mbVdy_WFZG42HjeTo&_nc_zt=23&_nc_ht=scontent.fslc3-1.fna&_nc_gid=ABbBb_JJCGF2Yuc10KyOwQ&oh=00_AfRQTj3lopRbSoBmNdzNsV10Bb3tCKi14p1KCi89-7hnsg&oe=6891535C" alt="Screenshot of The Galleries storefront" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
-                        <div class="p-8">
-                            <h3 class="text-2xl font-bold text-white mb-2">The Galleries</h3>
-                            <p class="text-gray-400 text-base mb-4">
-                                A clean and elegant website for a local home decor shop. This project features a responsive design, an about section, and a contact form to help customers connect with the business.
-                            </p>
-                            <a href="https://skylerlambdev.github.io/TheGalleries/" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#00c6a7] text-white font-bold py-3 px-8 rounded-full hover:bg-[#00a891] transition-colors duration-300 uppercase text-sm tracking-wide">
-                                View Site
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 2: Innovate Digital -->
-                    <div class="bg-[#2a2a2a] rounded-xl shadow-xl hover:shadow-[0_10px_20px_rgba(0,198,167,0.3)] transition-shadow duration-300 overflow-hidden group">
-                        <img src="https://placehold.co/1200x800/1a1a1a/00c6a7?text=Innovate+Digital" alt="Mockup of Innovate Digital website" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
-                        <div class="p-8">
-                            <h3 class="text-2xl font-bold text-white mb-2">Innovate Digital (Redesign)</h3>
-                            <p class="text-gray-400 text-base mb-4">
-                                A complete redesign of a digital marketing agency's website. The goal was to create a modern, sleek, and high-performance site that clearly communicates their services and expertise.
-                            </p>
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#00c6a7] text-white font-bold py-3 px-8 rounded-full hover:bg-[#00a891] transition-colors duration-300 uppercase text-sm tracking-wide">
-                                View Case Study
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 3: Brew & Bloom -->
-                    <div class="bg-[#2a2a2a] rounded-xl shadow-xl hover:shadow-[0_10px_20px_rgba(0,198,167,0.3)] transition-shadow duration-300 overflow-hidden group">
-                        <img src="https://placehold.co/1200x800/2a2a2a/f5e5d3?text=Brew+&+Bloom+Coffee" alt="Mockup of Brew & Bloom coffee shop website" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
-                        <div class="p-8">
-                            <h3 class="text-2xl font-bold text-white mb-2">Brew & Bloom Coffee</h3>
-                            <p class="text-gray-400 text-base mb-4">
-                                A vibrant and welcoming website for a boutique coffee shop. This project focuses on showcasing the brand's unique identity, menu, and community events with a user-friendly layout.
-                            </p>
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#00c6a7] text-white font-bold py-3 px-8 rounded-full hover:bg-[#00a891] transition-colors duration-300 uppercase text-sm tracking-wide">
-                                View Site
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- AI-Powered Design Assistant Section -->
-        <section id="ai-assistant" class="py-20 md:py-32 bg-[#2a2a2a]">
-            <div class="container mx-auto px-6 max-w-4xl">
-                <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-8">
-                    ✨ AI-Powered Design Assistant
-                </h2>
-                <p class="text-center text-lg md:text-xl mb-12 text-gray-400">
-                    Need a fresh idea? Describe a project, and our AI assistant will help you brainstorm!
-                </p>
-                <div class="flex flex-col gap-6">
-                    <textarea id="projectIdeaInput" rows="5" class="w-full p-4 rounded-lg bg-[#1a1a1a] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#00c6a7]" placeholder="Describe your project idea here, for example: 'A website for a local bakery that sells fresh bread and pastries.'"></textarea>
-                    <button id="generateIdeaButton" class="w-full bg-[#00c6a7] text-white font-bold py-4 rounded-lg shadow-lg hover:bg-[#00a891] transition-colors duration-300 text-lg uppercase tracking-wider flex items-center justify-center">
-                        Generate Project Ideas ✨
-                    </button>
-                    <!-- Output area for the AI-generated content -->
-                    <div id="aiOutput" class="mt-8 bg-[#1a1a1a] p-8 rounded-lg shadow-inner border border-[#444] hidden">
-                        <!-- Content will be injected here -->
-                    </div>
-                    <!-- Loading spinner -->
-                    <div id="loadingSpinner" class="flex justify-center items-center mt-8 hidden">
-                        <div class="spinner"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 md:py-32 bg-[#2a2a2a]">
-            <div class="container mx-auto px-6 max-w-2xl text-white">
-                <h2 class="text-4xl md:text-5xl font-bold text-center mb-8">
-                    Let's Connect
-                </h2>
-                <p class="text-center text-lg md:text-xl mb-12 text-gray-400">
-                    Ready to build something amazing together? Reach out to me, and let's discuss your project.
-                </p>
-                <!-- Placeholder Form -->
-                <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6">
-                    <div>
-                        <label for="name" class="block text-lg font-semibold mb-2">Name</label>
-                        <input type="text" id="name" name="name" class="w-full p-4 rounded-lg bg-[#1a1a1a] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#00c6a7]" placeholder="Your Name" required>
-                    </div>
-                    <div>
-                        <label for="email" class="block text-lg font-semibold mb-2">Email</label>
-                        <input type="email" id="email" name="email" class="w-full p-4 rounded-lg bg-[#1a1a1a] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#00c6a7]" placeholder="your.email@example.com" required>
-                    </div>
-                    <div>
-                        <label for="message" class="block text-lg font-semibold mb-2">Message</label>
-                        <textarea id="message" name="message" rows="5" class="w-full p-4 rounded-lg bg-[#1a1a1a] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#00c6a7]" placeholder="Tell me about your project..." required></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-[#00c6a7] text-white font-bold py-4 rounded-lg shadow-lg hover:bg-[#00a891] transition-colors duration-300 text-lg uppercase tracking-wider">
-                        Send Message
-                    </button>
-                    <p class="text-center text-sm text-gray-400 mt-4 italic">
-                        *This form is currently in demo mode while I build out my full portfolio. For now, feel free to contact me through social media or email.*
-                    </p>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!-- Custom Message Box -->
-    <div id="messageBox" class="message-box-overlay hidden">
-        <div class="message-box-content">
-            <span class="message-box-close" onclick="closeMessageBox()">&times;</span>
-            <h3 class="text-2xl font-bold mb-4">Message Sent!</h3>
-            <p>Thanks for reaching out! This form is just a placeholder for now. Please contact me via email or socials.</p>
-        </div>
+  <!-- Header & Navigation -->
+  <header class="bg-[#1a1a1a] sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-6 py-4 flex flex-col md:flex-row md:justify-between items-center md:items-center gap-4">
+      <!-- Profile picture, Name, and Status Badge -->
+      <div class="flex items-center">
+        <img src="https://scontent.fslc3-1.fna.fbcdn.net/v/t39.30808-6/502559830_24114264594838309_8926670469152375718_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=CIf4_PmDfSAQ7kNvwH2H3Ns&_nc_oc=AdnZ62QLMG9TCLkB_J7H6K0Ak_tdonbQuVEuKFXpcMLGme7EYU2eePT309zIEfzBYEA&_nc_zt=23&_nc_ht=scontent.fslc3-1.fna&_nc_gid=ZUpRrk6YyhW7Bvo1Lp3GYA&oh=00_AfQ1kS8FjC3zXQ1wSkmt2Y9xIo4Tsr2YkBmly3BfK3nRKA&oe=6891789B" alt="Skyler Lamb Profile Picture" class="w-10 h-10 rounded-full mr-3">
+        <a href="#hero" class="text-3xl font-bold text-white hover:text-[#00c6a7] transition-colors duration-300">Skyler Lamb</a>
+        <!-- "Available for Hire" Badge -->
+        <span class="ml-4 bg-[#00c6a7] text-[#1a1a1a] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider hidden md:block">
+          Available for Hire
+        </span>
+      </div>
+      <nav class="space-x-4 md:space-x-8">
+        <a href="#about" class="text-gray-300 hover:text-[#00c6a7] font-semibold text-lg transition-colors duration-300">About</a>
+        <a href="#portfolio" class="text-gray-300 hover:text-[#00c6a7] font-semibold text-lg transition-colors duration-300">Portfolio</a>
+        <a href="#contact" class="text-gray-300 hover:text-[#00c6a7] font-semibold text-lg transition-colors duration-300">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Footer -->
-    <footer class="bg-[#1a1a1a] text-gray-500 py-8 text-center">
-        <div class="container mx-auto px-6">
-            <p>&copy; <span id="currentYear"></span> Skyler Lamb. All rights reserved.</p>
-            <!-- Social Icons -->
-            <div class="flex justify-center space-x-6 mt-4">
-                <!-- LinkedIn -->
-                <a href="https://linkedin.com/in/skylerlamb" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#00c6a7] transition-colors duration-300" aria-label="LinkedIn Profile">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                        <rect width="4" height="12" x="2" y="9" />
-                        <circle cx="4" cy="4" r="2" />
-                    </svg>
-                </a>
-                <!-- GitHub -->
-                <a href="https://github.com/skylerlambdev" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#00c6a7] transition-colors duration-300" aria-label="GitHub Profile">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github">
-                        <path d="M15 22s-4 1-6 2c-2 0-3-1-3-1l-1-2c-2-1-3-1-3-1a2 2 0 0 1-1-2c0-1 1-2 1-2 0-1-1-2 1-3 2-2 3-1 4-1 0 0 1-2 2-2 0 0-1 0-1-1 0-2 1-3 3-3-2 0-3-1-3-1-1-1-1-3 0-4-1 0-2-2-2-2-1-2-1-3 0-4 1-1 2-2 3-2 1-1 2-1 3-1-1-1 1-1 2-1 1 0 2 0 3 0 2 0 3-1 4 0 1 0 1 1 1 1 1 1 2 2 2 3-1 1-2 2-2 2 0 1 1 1 1 2 0 1-1 2 0 2-1 0-2 1-2 2-1 1-1 2 0 2-2 0-3 1-3 2 0 1 1 2 1 2z" />
-                        <path d="M9 19c-3 1-4.114-1.393-4.9-2.6-1.5-2.2-2.1-3.6-2.1-3.6" />
-                        <path d="M15 22s-4 1-6 2c-2 0-3-1-3-1l-1-2c-2-1-3-1-3-1a2 2 0 0 1-1-2c0-1 1-2 1-2 0-1-1-2 1-3 2-2 3-1 4-1 0 0 1-2 2-2 0 0-1 0-1-1 0-2 1-3 3-3-2 0-3-1-3-1-1-1-1-3 0-4-1 0-2-2-2-2-1-2-1-3 0-4 1-1 2-2 3-2 1-1 2-1 3-1-1-1 1-1 2-1 1 0 2 0 3 0 2 0 3-1 4 0 1 0 1 1 1 1 1 1 2 2 2 3-1 1-2 2-2 2 0 1 1 1 1 2 0 1-1 2 0 2-1 0-2 1-2 2-1 1-1 2 0 2-2 0-3 1-3 2 0 1 1 2 1 2z" />
-                        <path d="M9 19c-3 1-4.114-1.393-4.9-2.6-1.5-2.2-2.1-3.6-2.1-3.6" />
-                        <path d="M21 11.5a8.38 8.38 0 0 0-.542-2.825c-.297-1.12-.962-2.193-1.92-2.91a8.368 8.368 0 0 0-3.32-.88 7.915 7.915 0 0 0-1.28.083c-1.19.227-2.317.78-3.355 1.62-1.077.87-1.986 2.016-2.64 3.32-.61 1.22-1.028 2.607-1.2 4.02" />
-                        <path d="M12 2a10 10 0 0 0-3.1 19.8" />
-                    </svg>
-                </a>
-                <!-- Email -->
-                <a href="mailto:your.email@example.com" class="text-gray-400 hover:text-[#00c6a7] transition-colors duration-300" aria-label="Email Address">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail">
-                        <rect width="20" height="16" x="2" y="4" rx="2" />
-                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    </svg>
-                </a>
-                <!-- Website URL -->
-                <a href="https://skylerlamb.dev" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#00c6a7] transition-colors duration-300" aria-label="Personal Website">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe">
-                        <circle cx="12" cy="12" r="10" />
-                        <path d="M12 2a15.3 15.3 0 0 0 4 10 15.3 15.3 0 0 0-4 10 15.3 15.3 0 0 0-4-10 15.3 15.3 0 0 0 4-10z" />
-                        <path d="M2 12h20" />
-                    </svg>
-                </a>
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="relative overflow-hidden h-screen flex items-center justify-center text-center">
+      <!-- This is the semi-transparent gray overlay to make the text pop -->
+      <div class="absolute inset-0 bg-gray-900 opacity-80"></div>
+      <!-- Video Background - Updated with the user-provided video element -->
+      <video id="b1b0a533-a70b-9909-ff0d-20fa8edb14e2-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/661bf41500fccc993d0782ce%2F667e2ba804f36535701377f4_Brady%20Donovan%20Design%20hero%20video-poster-00001.jpg&quot;); position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; width: auto; height: auto;" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="https://cdn.prod.website-files.com/661bf41500fccc993d0782ce%2F667e2ba804f36535701377f4_Brady%20Donovan%20Design%20hero%20video-transcode.mp4" data-wf-ignore="true">
+        <source src="https://cdn.prod.website-files.com/661bf41500fccc993d0782ce%2F667e2ba804f36535701377f4_Brady%20Donovan%20Design%20hero%20video-transcode.webm" data-wf-ignore="true">
+      </video>
+
+      <div class="container mx-auto px-6 relative z-20">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight text-white text-outline-gray">
+          Crafting Digital Experiences
+        </h1>
+        <p class="text-lg md:text-2xl font-light text-gray-200 text-outline-gray">
+          I design and build beautiful, functional websites that tell your unique story.
+        </p>
+        <a href="#portfolio" class="mt-12 inline-block bg-[#00c6a7] text-white hover:bg-[#00a891] transition-colors duration-300 font-bold py-4 px-12 rounded-full shadow-lg text-lg uppercase tracking-wider">
+          Explore My Portfolio
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-32 bg-[#2a2a2a]">
+      <div class="container mx-auto px-6 text-center max-w-4xl">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">
+          About Me
+        </h2>
+        <p class="text-lg md:text-xl text-gray-400 leading-relaxed mb-6">
+          I am a passionate and dedicated web designer with a focus on creating beautiful, functional, and user-friendly websites. I specialize in crafting digital experiences that not only look great but also drive results for small businesses. My work is built on a foundation of clean code, responsive design, and a commitment to client satisfaction.
+        </p>
+        <p class="text-lg md:text-xl text-gray-400 leading-relaxed">
+          I believe that every business deserves a strong online presence, and I am here to help you build one that truly represents your brand. Let's create something remarkable together.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 md:py-32 bg-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-16">
+          My Recent Projects
+        </h2>
+        <!-- Project Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+          <!-- Project Card 1: The Galleries -->
+          <div class="bg-[#2a2a2a] rounded-xl shadow-xl hover:shadow-[0_10px_20px_rgba(0,198,167,0.3)] transition-shadow duration-300 overflow-hidden group">
+            <img src="https://scontent.fslc3-1.fna.fbcdn.net/v/t39.30808-6/358728862_752616846868615_5538948483867149466_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=a1RHovXvrNoQ7kNvwHxefOy&_nc_oc=AdkU8JpfXsJHG_Zi13aTj-lorrW1Vb9xdeG-Dr4LTdTiUCStg5mbVdy_WFZG42HjeTo&_nc_zt=23&_nc_ht=scontent.fslc3-1.fna&_nc_gid=ABbBb_JJCGF2Yuc10KyOwQ&oh=00_AfRQTj3lopRbSoBmNdzNsV10Bb3tCKi14p1KCi89-7hnsg&oe=6891535C" alt="Screenshot of The Galleries storefront" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-white mb-2">The Galleries</h3>
+              <p class="text-gray-400 text-base mb-4">
+                A clean and elegant website for a local home decor shop. This project features a responsive design, an about section, and a contact form to help customers connect with the business.
+              </p>
+              <a href="https://skylerlambdev.github.io/TheGalleries/" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#00c6a7] text-white font-bold py-3 px-8 rounded-full hover:bg-[#00a891] transition-colors duration-300 uppercase text-sm tracking-wide">
+                View Site
+              </a>
             </div>
+          </div>
+
+          <!-- Project Card 2: Innovate Digital -->
+          <div class="bg-[#2a2a2a] rounded-xl shadow-xl hover:shadow-[0_10px_20px_rgba(0,198,167,0.3)] transition-shadow duration-300 overflow-hidden group">
+            <img src="https://placehold.co/1200x800/1a1a1a/00c6a7?text=Innovate+Digital" alt="Mockup of Innovate Digital website" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-white mb-2">Innovate Digital (Redesign)</h3>
+              <p class="text-gray-400 text-base mb-4">
+                A complete redesign of a digital marketing agency's website. The goal was to create a modern, sleek, and high-performance site that clearly communicates their services and expertise.
+              </p>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#00c6a7] text-white font-bold py-3 px-8 rounded-full hover:bg-[#00a891] transition-colors duration-300 uppercase text-sm tracking-wide">
+                View Case Study
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Card 3: Brew & Bloom -->
+          <div class="bg-[#2a2a2a] rounded-xl shadow-xl hover:shadow-[0_10px_20px_rgba(0,198,167,0.3)] transition-shadow duration-300 overflow-hidden group">
+            <img src="https://placehold.co/1200x800/2a2a2a/f5e5d3?text=Brew+&+Bloom+Coffee" alt="Mockup of Brew & Bloom coffee shop website" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-white mb-2">Brew & Bloom Coffee</h3>
+              <p class="text-gray-400 text-base mb-4">
+                A vibrant and welcoming website for a boutique coffee shop. This project focuses on showcasing the brand's unique identity, menu, and community events with a user-friendly layout.
+              </p>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#00c6a7] text-white font-bold py-3 px-8 rounded-full hover:bg-[#00a891] transition-colors duration-300 uppercase text-sm tracking-wide">
+                View Site
+              </a>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script>
-        // JavaScript to dynamically set the current year in the footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-32 bg-[#2a2a2a]">
+      <div class="container mx-auto px-6 max-w-2xl text-white">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-8">
+          Let's Connect
+        </h2>
+        <p class="text-center text-lg md:text-xl mb-12 text-gray-400">
+          Ready to build something amazing together? Reach out to me, and let's discuss your project.
+        </p>
+        <!-- Placeholder Form -->
+        <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6">
+          <div>
+            <label for="name" class="block text-lg font-semibold mb-2">Name</label>
+            <input type="text" id="name" name="name" class="w-full p-4 rounded-lg bg-[#1a1a1a] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#00c6a7]" placeholder="Your Name" required>
+          </div>
+          <div>
+            <label for="email" class="block text-lg font-semibold mb-2">Email</label>
+            <input type="email" id="email" name="email" class="w-full p-4 rounded-lg bg-[#1a1a1a] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#00c6a7]" placeholder="your.email@example.com" required>
+          </div>
+          <div>
+            <label for="message" class="block text-lg font-semibold mb-2">Message</label>
+            <textarea id="message" name="message" rows="5" class="w-full p-4 rounded-lg bg-[#1a1a1a] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#00c6a7]" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-[#00c6a7] text-white font-bold py-4 rounded-lg shadow-lg hover:bg-[#00a891] transition-colors duration-300 text-lg uppercase tracking-wider">
+            Send Message
+          </button>
+          <p class="text-center text-sm text-gray-400 mt-4 italic">
+            *This form is currently in demo mode while I build out my full portfolio. For now, feel free to contact me through social media or email.*
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
 
-        // JavaScript to handle the custom message box
-        const contactForm = document.getElementById('contactForm');
-        const messageBox = document.getElementById('messageBox');
+  <!-- Custom Message Box -->
+  <div id="messageBox" class="message-box-overlay hidden">
+    <div class="message-box-content">
+      <span class="message-box-close" onclick="closeMessageBox()">&times;</span>
+      <h3 class="text-2xl font-bold mb-4">Message Sent!</h3>
+      <p>Thanks for reaching out! This form is just a placeholder for now. Please contact me via email or socials.</p>
+    </div>
+  </div>
 
-        // Function to show the message box
-        const showMessageBox = () => {
-            messageBox.classList.remove('hidden');
-        };
+  <!-- Footer -->
+  <footer class="bg-[#1a1a1a] text-gray-500 py-8 text-center">
+    <div class="container mx-auto px-6">
+      <p>&copy; <span id="currentYear"></span> Skyler Lamb. All rights reserved.</p>
+      <!-- Social Icons -->
+      <div class="flex justify-center space-x-6 mt-4">
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/skylerlamb" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#00c6a7] transition-colors duration-300" aria-label="LinkedIn Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect width="4" height="12" x="2" y="9" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/skylerlambdev" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#00c6a7] transition-colors duration-300" aria-label="GitHub Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github">
+            <path d="M15 22s-4 1-6 2c-2 0-3-1-3-1l-1-2c-2-1-3-1-3-1a2 2 0 0 1-1-2c0-1 1-2 1-2 0-1-1-2 1-3 2-2 3-1 4-1 0 0 1-2 2-2 0 0-1 0-1-1 0-2 1-3 3-3-2 0-3-1-3-1-1-1-1-3 0-4-1 0-2-2-2-2-1-2-1-3 0-4 1-1 2-2 3-2 1-1 2-1 3-1-1-1 1-1 2-1 1 0 2 0 3 0 2 0 3-1 4 0 1 0 1 1 1 1 1 1 2 2 2 3-1 1-2 2-2 2 0 1 1 1 1 2 0 1-1 2 0 2-1 0-2 1-2 2-1 1-1 2 0 2-2 0-3 1-3 2 0 1 1 2 1 2z" />
+            <path d="M9 19c-3 1-4.114-1.393-4.9-2.6-1.5-2.2-2.1-3.6-2.1-3.6" />
+            <path d="M15 22s-4 1-6 2c-2 0-3-1-3-1l-1-2c-2-1-3-1-3-1a2 2 0 0 1-1-2c0-1 1-2 1-2 0-1-1-2 1-3 2-2 3-1 4-1 0 0 1-2 2-2 0 0-1 0-1-1 0-2 1-3 3-3-2 0-3-1-3-1-1-1-1-3 0-4-1 0-2-2-2-2-1-2-1-3 0-4 1-1 2-2 3-2 1-1 2-1 3-1-1-1 1-1 2-1 1 0 2 0 3 0 2 0 3-1 4 0 1 0 1 1 1 1 1 1 2 2 2 3-1 1-2 2-2 2 0 1 1 1 1 2 0 1-1 2 0 2-1 0-2 1-2 2-1 1-1 2 0 2-2 0-3 1-3 2 0 1 1 2 1 2z" />
+            <path d="M9 19c-3 1-4.114-1.393-4.9-2.6-1.5-2.2-2.1-3.6-2.1-3.6" />
+            <path d="M21 11.5a8.38 8.38 0 0 0-.542-2.825c-.297-1.12-.962-2.193-1.92-2.91a8.368 8.368 0 0 0-3.32-.88 7.915 7.915 0 0 0-1.28.083c-1.19.227-2.317.78-3.355 1.62-1.077.87-1.986 2.016-2.64 3.32-.61 1.22-1.028 2.607-1.2 4.02" />
+            <path d="M12 2a10 10 0 0 0-3.1 19.8" />
+          </svg>
+        </a>
+        <!-- Email -->
+        <a href="mailto:your.email@example.com" class="text-gray-400 hover:text-[#00c6a7] transition-colors duration-300" aria-label="Email Address">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail">
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+        </a>
+        <!-- Website URL -->
+        <a href="https://skylerlamb.dev" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#00c6a7] transition-colors duration-300" aria-label="Personal Website">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 2a15.3 15.3 0 0 0 4 10 15.3 15.3 0 0 0-4 10 15.3 15.3 0 0 0-4-10 15.3 15.3 0 0 0 4-10z" />
+            <path d="M2 12h20" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
 
-        // Function to hide the message box
-        const closeMessageBox = () => {
-            messageBox.classList.add('hidden');
-        };
-
-        // Add event listener to the form to show the message box on submit
-        contactForm.addEventListener('submit', (e) => {
-            // Prevent the default form submission
-            e.preventDefault();
-            // Show the custom message box
-            showMessageBox();
-        });
-
-        // Gemini API powered AI assistant logic
-        const generateIdeaButton = document.getElementById('generateIdeaButton');
-        const projectIdeaInput = document.getElementById('projectIdeaInput');
-        const aiOutput = document.getElementById('aiOutput');
-        const loadingSpinner = document.getElementById('loadingSpinner');
-
-        generateIdeaButton.addEventListener('click', async () => {
-            const projectIdea = projectIdeaInput.value;
-            if (!projectIdea) {
-                aiOutput.innerHTML = '<p class="text-red-400">Please enter a project idea to get started!</p>';
-                aiOutput.classList.remove('hidden');
-                return;
-            }
-
-            // Show loading spinner and hide previous output
-            aiOutput.classList.add('hidden');
-            loadingSpinner.classList.remove('hidden');
-            generateIdeaButton.disabled = true;
-            generateIdeaButton.textContent = 'Generating...';
-
-            try {
-                let chatHistory = [];
-                chatHistory.push({
-                    role: "user",
-                    parts: [{
-                        text: `You are an expert web designer. I will provide you with a project idea, and you will respond with a creative, professional project brief in Markdown format. The brief should include:
-- A clear, professional project title.
-- A concise summary of the project's purpose and target audience.
-- A list of 3-5 key features.
-- A suggested color palette (with hex codes).
-
-Here is the project idea: ${projectIdea}`
-                    }]
-                });
-
-                const payload = { contents: chatHistory };
-                const apiKey = "AIzaSyAd-1nu_gF5aBVj71wicEQWPVg_BuGqkT4";
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-
-                let response;
-                let retryCount = 0;
-                const maxRetries = 5;
-                const baseDelay = 1000; // 1 second
-
-                while (retryCount < maxRetries) {
-                    try {
-                        response = await fetch(apiUrl, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(payload)
-                        });
-
-                        if (response.status === 429) {
-                            // Too many requests, implement exponential backoff
-                            const delay = baseDelay * (2 ** retryCount) + Math.random() * 1000;
-                            retryCount++;
-                            await new Promise(resolve => setTimeout(resolve, delay));
-                            continue;
-                        }
-
-                        if (!response.ok) {
-                            throw new Error(`API call failed with status: ${response.status}`);
-                        }
-
-                        const result = await response.json();
-                        if (result.candidates && result.candidates.length > 0 &&
-                            result.candidates[0].content && result.candidates[0].content.parts &&
-                            result.candidates[0].content.parts.length > 0) {
-                            const text = result.candidates[0].content.parts[0].text;
-                            aiOutput.innerHTML = `<div class="prose prose-invert max-w-none text-white">${text}</div>`;
-                            aiOutput.classList.remove('hidden');
-                        } else {
-                            aiOutput.innerHTML = '<p class="text-red-400">An error occurred while processing your request. Please try again.</p>';
-                            aiOutput.classList.remove('hidden');
-                        }
-                        break; // Exit the retry loop on success
-                    } catch (error) {
-                        console.error('Fetch error:', error);
-                        // No specific retry logic for general errors, just re-throw after max retries
-                        if (retryCount >= maxRetries - 1) {
-                            aiOutput.innerHTML = '<p class="text-red-400">Failed to get a response after multiple retries. Please try again later.</p>';
-                            aiOutput.classList.remove('hidden');
-                            throw error;
-                        }
-                        retryCount++;
-                        await new Promise(resolve => setTimeout(resolve, baseDelay * (2 ** retryCount)));
-                    }
-                }
-            } catch (error) {
-                console.error('Error in Gemini API call:', error);
-                aiOutput.innerHTML = '<p class="text-red-400">Something went wrong. Please check your network and try again.</p>';
-                aiOutput.classList.remove('hidden');
-            } finally {
-                // Hide loading spinner and re-enable button
-                loadingSpinner.classList.add('hidden');
-                generateIdeaButton.disabled = false;
-                generateIdeaButton.textContent = 'Generate Project Ideas ✨';
-            }
-        });
-    </script>
+  <script>
+    // JavaScript to dynamically set the current year in the footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    // JavaScript to handle the custom message box
+    const contactForm = document.getElementById('contactForm');
+    const messageBox = document.getElementById('messageBox');
+    // Function to show the message box
+    const showMessageBox = () => {
+      messageBox.classList.remove('hidden');
+    };
+    // Function to hide the message box
+    const closeMessageBox = () => {
+      messageBox.classList.add('hidden');
+    };
+    // Add event listener to the form to show the message box on submit
+    contactForm.addEventListener('submit', (e) => {
+      // Prevent the default form submission
+      e.preventDefault();
+      // Show the custom message box
+      showMessageBox();
+    });
+  </script>
 </body>
 
 </html>
