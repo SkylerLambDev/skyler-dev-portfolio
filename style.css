@@ -44,3 +44,38 @@ h4 {
   text-shadow: -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555,
     1px 1px 0 #555;
 }
+/* Styles for the custom message box */
+.message-box-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.message-box-content {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  max-width: 90%;
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+.message-box-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #e0e0e0;
+  transition: color 0.3s;
+}
+.message-box-close:hover {
+  color: #00c6a7;
+}
