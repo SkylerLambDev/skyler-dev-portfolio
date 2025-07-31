@@ -1,32 +1,46 @@
+/* Custom Font Family Declarations */
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #1a1a1a; /* Dark background */
+  color: #e0e0e0; /* Light gray text */
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
 
-        /* Custom font families */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #F8FAFC; /* bg-slate-50 */
-            color: #1E293B; /* text-slate-800 */
-        }
-        h1, h2, h3, h4 {
-            font-family: 'Montserrat', sans-serif;
-        }
+/* Custom scrollbar for a polished look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #2c2c2c; /* Dark track */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #555; /* Gray thumb */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Lighter gray on hover */
+}
 
-        /* Smooth scrolling for anchor links */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Custom scrollbar for a polished look */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #E2E8F0; /* slate-200 */
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #94A3B8; /* slate-400 */
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #64748B; /* slate-500 */
-        }
-    
+/* Hero Video Styles */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  /* Ensure the video is always centered and fills the screen */
+}
+/* Custom class for a text outline effect */
+.text-outline-gray {
+  text-shadow: -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555,
+    1px 1px 0 #555;
+}
