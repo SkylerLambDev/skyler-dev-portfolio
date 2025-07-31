@@ -131,47 +131,49 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 md:py-32 bg-[#2a2a2a]">
-      <div class="container mx-auto px-6 max-w-2xl text-white">
-        <h2 class="text-4xl md:text-5xl font-bold text-center mb-8">
-          Let's Connect
-        </h2>
-        <p class="text-center text-lg md:text-xl mb-12 text-gray-400">
-          Ready to build something amazing together? Reach out to me, and let's discuss your project.
-        </p>
-        
-        <form id="contactForm" action="https://formspree.io/f/xjkoolgk" method="POST" class="space-y-6">
-          <div>
-            <label for="name" class="block text-lg font-semibold mb-2">Name</label>
-            <input type="text" id="name" name="name" class="w-full p-4 rounded-lg bg-[#1a1a1a] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#00c6a7]" placeholder="Your Name" required>
-          </div>
-          <div>
-            <label for="email" class="block text-lg font-semibold mb-2">Email</label>
-            <input type="email" id="email" name="email" class="w-full p-4 rounded-lg bg-[#1a1a1a] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#00c6a7]" placeholder="your.email@example.com" required>
-          </div>
-          <div>
-            <label for="message" class="block text-lg font-semibold mb-2">Message</label>
-            <textarea id="message" name="message" rows="5" class="w-full p-4 rounded-lg bg-[#1a1a1a] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#00c6a7]" placeholder="Tell me about your project..." required></textarea>
-          </div>
-          <button type="submit" class="w-full bg-[#00c6a7] text-white font-bold py-4 rounded-lg shadow-lg hover:bg-[#00a891] transition-colors duration-300 text-lg uppercase tracking-wider">
-            Send Message
-          </button>
-        </form>
-      </div>
-    </section>
-  </main>
+     <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-32 bg-[#2a2a2a]">
+            <div class="container mx-auto px-6 max-w-2xl text-white">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-8">
+                    Let's Connect
+                </h2>
+                <p class="text-center text-lg md:text-xl mb-12 text-gray-400">
+                    Ready to build something amazing together? Reach out to me, and let's discuss your project.
+                </p>
 
-  <!-- Custom Message Box -->
-  <div id="messageBox" class="message-box-overlay hidden">
-    <div class="message-box-content">
-      <span class="message-box-close" onclick="closeMessageBox()">&times;</span>
-      <h3 class="text-2xl font-bold mb-4">Message Sent!</h3>
-      <p>Thanks for reaching out! I will contact you as soon as possible to make your dreams come true!</p>
+                <!-- This is the contact form. The action attribute is set to a Formspree endpoint -->
+                <form id="contactForm" action="https://formspree.io/f/xjkoolgk" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-lg font-semibold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-4 rounded-lg bg-[#1a1a1a] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#00c6a7]" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-lg font-semibold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-4 rounded-lg bg-[#1a1a1a] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#00c6a7]" placeholder="your.email@example.com" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-lg font-semibold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full p-4 rounded-lg bg-[#1a1a1a] text-white border border-[#444] focus:outline-none focus:ring-2 focus:ring-[#00c6a7]" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" id="submitButton" class="w-full bg-[#00c6a7] text-white font-bold py-4 rounded-lg shadow-lg hover:bg-[#00a891] transition-colors duration-300 text-lg uppercase tracking-wider">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom Message Box -->
+    <div id="messageBox" class="message-box-overlay hidden">
+        <div class="message-box-content">
+            <span class="message-box-close" onclick="closeMessageBox()">&times;</span>
+            <h3 id="messageTitle" class="text-2xl font-bold mb-4"></h3>
+            <p id="messageText"></p>
+            <div id="loadingIndicator" class="hidden animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-white mx-auto mt-4"></div>
+        </div>
     </div>
-  </div>
 
-  <!-- Footer -->
+    <!-- Footer -->
     <footer class="bg-[#1a1a1a] text-gray-500 py-8 text-center">
         <div class="container mx-auto px-6">
             <p>&copy; <span id="currentYear"></span> Skyler Lamb. All rights reserved.</p>
@@ -187,28 +189,72 @@
             </div>
         </div>
     </footer>
-  <script>
-    // JavaScript to dynamically set the current year in the footer
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-    // JavaScript to handle the custom message box
-    const contactForm = document.getElementById('contactForm');
-    const messageBox = document.getElementById('messageBox');
-    // Function to show the message box
-    const showMessageBox = () => {
-      messageBox.classList.remove('hidden');
-    };
-    // Function to hide the message box
-    const closeMessageBox = () => {
-      messageBox.classList.add('hidden');
-    };
-    // Add event listener to the form to show the message box on submit
-    contactForm.addEventListener('submit', (e) => {
-      // Prevent the default form submission
-      e.preventDefault();
-      // Show the custom message box
-      showMessageBox();
-    });
-  </script>
+
+    <script>
+        // JavaScript to dynamically set the current year in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // JavaScript to handle the custom message box and form submission
+        const contactForm = document.getElementById('contactForm');
+        const messageBox = document.getElementById('messageBox');
+        const messageTitle = document.getElementById('messageTitle');
+        const messageText = document.getElementById('messageText');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+        const submitButton = document.getElementById('submitButton');
+
+        // Function to show the message box
+        const showMessageBox = (title, text, showLoading = false) => {
+            messageTitle.textContent = title;
+            messageText.textContent = text;
+            loadingIndicator.classList.toggle('hidden', !showLoading);
+            messageBox.classList.remove('hidden');
+        };
+
+        // Function to hide the message box
+        const closeMessageBox = () => {
+            messageBox.classList.add('hidden');
+        };
+
+        // Add event listener to the form to handle submission
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Show a "loading" message
+            showMessageBox('Sending...', 'Your message is on its way.', true);
+            submitButton.disabled = true;
+
+            const form = e.target;
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    headers: {
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    showMessageBox('Message Sent!', 'Thanks for reaching out! I will contact you as soon as possible to make your dreams come true!');
+                    form.reset(); // Clear the form fields
+                } else {
+                    const responseData = await response.json();
+                    if (responseData.error) {
+                        showMessageBox('Error', `Something went wrong: ${responseData.error}`);
+                    } else {
+                        showMessageBox('Error', 'Oops! There was an issue sending your message. Please try again later.');
+                    }
+                }
+            } catch (error) {
+                console.error('Submission error:', error);
+                showMessageBox('Error', 'There was a network error. Please check your connection and try again.');
+            } finally {
+                submitButton.disabled = false;
+            }
+        });
+    </script>
 </body>
 
 </html>
